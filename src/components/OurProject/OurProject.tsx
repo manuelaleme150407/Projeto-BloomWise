@@ -1,5 +1,5 @@
 import donation from "../../assets/images/donation.png";
-import "./OurProjectStyle.css";
+import "./OurProject.css";
 
 function OurProject() {
   return (
