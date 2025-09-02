@@ -1,0 +1,183 @@
+/* .login-container {
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-side {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-end;
+      color: white;
+      padding: 40px;
+    }
+
+    .right-side h2 {
+      margin-bottom: 30px;
+      font-size: 2rem;
+    }
+
+    .form {
+      width: 100%;
+      max-width: 350px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .input-group {
+      background-color: #d13863; 
+      border-radius: 25px;
+      display: flex;
+      align-items: center;
+      padding: 10px 15px;
+    }
+
+    .input-group input {
+      border: none;
+      outline: none;
+      background: none;
+      flex: 1;
+      color: white;
+      font-size: 1rem;
+      padding-left: 10px;
+    }
+
+    .input-group input::placeholder {
+      color: #f2d5dd;
+    }
+
+    .input-group img {
+      width: 20px;
+    }
+
+    button {
+      background-color: #80002a;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 25px;
+      font-size: 1rem;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    button:disabled {
+      opacity: 0.7;
+      cursor: not-allowed;
+    }
+
+    .signup {
+      margin-top: 15px;
+      font-size: 0.9rem;
+    }
+
+    .signup a {
+      color: #fff;
+      text-decoration: underline;
+    } */
+
+    /* Login.css */
+
+.login-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Lado direito */
+.right-side {
+  width: 40%; 
+  min-width: 320px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 40px;
+}
+
+.right-side h2 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+/* Formulário */
+.form {
+  width: 100%;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input-group {
+  background-color: #d13863;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+}
+
+.input-group img {
+  width: 20px;
+}
+
+.input-group input {
+  border: none;
+  outline: none;
+  background: none;
+  flex: 1;
+  color: white;
+  font-size: 1rem;
+  padding-left: 10px;
+}
+
+.input-group input::placeholder {
+  color: #f2d5dd;
+}
+
+/* Botão */
+.entrar {
+  background-color: #80002a;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.3s ease;
+}
+
+.entrar:hover:enabled {
+  background-color: #990033;
+}
+
+.entrar:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* Link de cadastro */
+.signup {
+  margin-top: 15px;
+  font-size: 0.9rem;
+}
+
+.signup a {
+  color: #fff;
+  text-decoration: underline;
+}

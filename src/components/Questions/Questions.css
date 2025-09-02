@@ -1,34 +1,75 @@
- @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
 .frequentQuestions {
   height: 100vh;
   padding: 0;
   font-family: "Poppins", sans-serif;
   display: flex;
-  display: flex;
-  justify-content: space-between; 
-  /* align-items: flex-start;  */
-  gap: 5rem; /* espaço entre as colunas */
+  justify-content: space-between;
+  /* gap: 10px;  */
   background-color: #fffbf5;
+  color: #323232;
+  font-weight: 350;
 }
 
 .partOne,
 .partTwo {
   flex: 1; /* cada um ocupa metade */
   text-align: justify;
-  margin: 50px;
+  margin: 60px 80px; /* (10px para cima/baixo, 30px para esquerda/direita). */
 }
 
 .titleQuestions,
-.makeQuestion{
-  font-size: 30px;
+.makeQuestion {
+  font-size: 40px;
   text-align: justify;
 }
 
-.principalQuestions{
+.principalQuestions {
   font-size: 25px;
 }
 
-.answers{
+.answers {
   font-size: 20px;
+}
+
+.line {
+  border: none;
+  border-top: 1px solid rgba(212, 74, 110, 0.9);
+  margin-top: 10px;
+}
+
+.makeQuestion {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  gap: 10px;
+}
+
+.input-box {
+  padding: 10px;
+  border: 2px solid #333;
+  font-size: 1rem;
+  width: 350px;
+  text-transform: uppercase;
+  background-color: #faefe0;
+  margin-right: 10px;
+  text-align: center; /* Centraliza o texto e placeholder */
+}
+
+.input-box::placeholder {
+  text-align: center; /* Centraliza só o placeholder */
+}
+
+.submit {
+  padding: 11px 20px;
+  background-color: #c6284f; /* Cor do botão */
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  border: 2px solid #333;
+}
+
+.submit:hover {
+  background-color: #a71f40;
 }
