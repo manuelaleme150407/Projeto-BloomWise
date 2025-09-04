@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+.whoAreYouSection {
+  width: 100vw; /* largura baseada na largura da viewport */
+  height: 100vh; /* altura baseada na altura da viewport */
+  background-size: cover; /* cobre todo o elemento */
+  background-position: center; /* centraliza a imagem */
+  background-repeat: no-repeat;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Poppins, sans-serif;
+}
+
+.principalText {
+  /* flex-direction: column; */
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-size: 40px;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  padding: 10px;
+  color: #000000;
+  font-weight: 300;
+}
+
+.differentWord {
+  background-color: #b5053a;
+  color: #faefe0;
+}
+
+.receiver {
+  background-color: #7e0026;
+  color: #b21d4a;
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.giver {
+  background-color: #e5d9cd;
+  color: #7a7169;
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.receiver:hover:enabled {
+  background-color: #7e0026ad;
+}
+
+.receiver:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.giver:hover:enabled {
+  background-color: #faefe0;
+}
+
+.giver:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
