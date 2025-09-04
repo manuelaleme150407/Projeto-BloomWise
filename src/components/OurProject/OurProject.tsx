@@ -1,5 +1,6 @@
 import donation from "../../assets/images/donation.png";
 import "./OurProject.css";
+import { Link } from "react-router-dom";
 
 function OurProject() {
   return (
@@ -28,8 +29,12 @@ function OurProject() {
             <br />
           </p>
           <div className="buttonsProject">
+            <Link to="/login">
             <button className="donate">QUERO DOAR</button>
+            </Link>
+            <Link to="/login">
             <button className="receive">QUERO RECEBER</button>
+            </Link>
           </div>
         </div>
       </div>

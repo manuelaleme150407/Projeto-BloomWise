@@ -1,8 +1,7 @@
-
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
-.login-container {
+.signup-container {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-items: center;
   height: 100vh;
   background-size: cover;
@@ -12,7 +11,7 @@
 }
 
 /* Lado direito */
-.right-side {
+.left-side {
   width: 40%; 
   min-width: 320px;
   height: 100%;
@@ -20,18 +19,19 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: #eee4db;
   padding: 40px;
 }
 
-.right-side h2 {
+.left-side h2 {
   margin-bottom: 30px;
   font-size: 2rem;
+  color: #b5053a;
   font-weight: 300;
 }
 
 /* Formulário */
-.form {
+.form-signup {
   width: 100%;
   max-width: 320px;
   display: flex;
@@ -39,19 +39,19 @@
   gap: 20px;
 }
 
-.input-group {
-  background-color: #d13863;
+.sign-group {
+  background-color: #d9d0c5;
   border-radius: 25px;
   display: flex;
   align-items: center;
   padding: 10px 15px;
 }
 
-.input-group img {
+.sign-group img {
   width: 20px;
 }
 
-.input-group input {
+.sign-group input {
   border: none;
   outline: none;
   background: none;
@@ -61,14 +61,14 @@
   padding-left: 10px;
 }
 
-.input-group input::placeholder {
-  color: #f2d5dd;
+.sign-group input::placeholder {
+  color: #eee4db;
 }
 
 /* Botão */
-.entrar {
-  background-color: #80002a;
-  color: white;
+.enter {
+  background-color: #c0b5a7;
+  color: #faefe0;
   padding: 12px;
   border: none;
   border-radius: 25px;
@@ -78,11 +78,11 @@
   transition: background 0.3s ease;
 }
 
-.entrar:hover:enabled {
-  background-color: #990033;
+.enter:hover:enabled {
+  background-color: #d9d0c5;
 }
 
-.entrar:disabled {
+.enter:disabled {
   opacity: 0.7;
   cursor: not-allowed;
 }
@@ -91,9 +91,10 @@
 .signup {
   margin-top: 15px;
   font-size: 0.9rem;
+  color: black;
 }
 
 .signup a {
-  color: #fff;
+  color: black;
   text-decoration: underline;
 }

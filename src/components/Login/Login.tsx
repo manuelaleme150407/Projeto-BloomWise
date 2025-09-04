@@ -1,5 +1,8 @@
 import logIn from "../../assets/images/logIn.png";
+import unlock from '../../assets/images/unlock.png';
+import mail from '../../assets/images/mail.png';
 import "./Login.css";
+import { Link } from "react-router-dom";
 
 function Login() {
   return (
@@ -12,16 +15,20 @@ function Login() {
     <h2>Bem Vindo de Volta!</h2>
     <form className="form">
       <div className="input-group">
-        <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" alt="E-mail" />
+        <img src={mail} alt="E-mail" />
         <input type="email" placeholder="E-mail" />
       </div>
       <div className="input-group">
-        <img src="https://cdn-icons-png.flaticon.com/512/3064/3064155.png" alt="Senha" />
+        <img src={unlock} alt="Senha" />
         <input type="password" placeholder="Senha" />
       </div>
+      <Link to="/whoAreYou">
       <button className="entrar">Entrar</button>
+      </Link>
     </form>
+    <Link to="/signup">
     <p className="signup">Ainda não tem uma conta? <a href="#">Crie aqui</a></p>
+    </Link>
     </div>
       </div>
   </div>
