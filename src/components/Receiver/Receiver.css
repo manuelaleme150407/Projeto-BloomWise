@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+/* Receiver.css */
+.receiver-container {
+  width: 100%;
+  height: 100vh;
+  background-color: #a4002a; /* tom vermelho igual ao modelo */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+/* Fundo superior com a imagem */
+.fundo {
+  position: relative;
+  width: 100%;
+  height: 35vh;
+  overflow: hidden;
+}
+
+.fundo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(80%);
+}
+
+.mensagem {
+  position: absolute;
+  bottom: 15px;
+  right: 30px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Texto principal */
+.receiverInformation {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.receiverText {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.differentWord {
+  color: #e0a3b1; /* destaque rosa claro da palavra 'categoria' */
+  font-weight: bold;
+}
+
+/* Categorias */
+.categoria {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.categoria div {
+  width: 200px;
+  height: 180px;
+  border-radius: 6px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.categoria div:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.material-title,
+.criancas-title,
+.computador-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-shadow: 0 2px 5px rgba(0,0,0,0.7);
+  text-align: center;
+}
+
+/* Botão */
+.btn-enter {
+  background-color: white;
+  color: #a4002a;
+  border: none;
+  padding: 12px 40px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.btn-enter:hover {
+  background-color: #a4002a;
+  color: white;
+  border: 2px solid white;
+}

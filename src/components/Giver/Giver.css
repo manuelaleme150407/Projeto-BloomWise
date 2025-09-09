@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  height: 100%;
+  background-color: #fffbf5;
+}
+
+.divInicial {
+  position: relative;
+}
+
+.fundoGiver {
+  display: block;
+  width: 100%;
+}
+
+.welcomeMessage {
+  position: absolute;
+  bottom: 16px; /* distância da base da imagem */
+  left: 16px; /* distância da esquerda da imagem */
+  color: #fffbf5;
+  font-size: 60px;
+}
+
+.differentLetter {
+  color: #e5d9cd;
+  background-color: #b21d4a;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.giverInformation {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: flex-start; */
+  justify-content: space-around;
+  margin-left: 50px;
+}
+
+.giverTotal {
+  display: flex;
+  flex-direction: column;
+}
+
+.giverText {
+  margin-top: 40px;
+  font-size: 40px;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 40px;
+}
+
+.inputGiver {
+  font-size: 20px;
+  margin-left: 40px;
+  border: none;
+  border-bottom: 2px solid #000;
+  outline: none;
+  padding: 8px 0;
+  width: 500px;
+  background: transparent;
+}
+
+.btn-pronto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  padding: 11px 20px;
+  color: #b5053a;
+  cursor: pointer;
+  text-transform: uppercase;
+  border: 2px solid #b5053a;
+  width: 200px;
+  height: 60px;
+  font-weight: 400;
+}
+
+.btn-pronto:hover {
+  background-color: #a71f40;
+  color: #fffbf5;
+}
+
+.uploadBox {
+  border: 2px solid #7f7268;
+  width: 240px;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #7f7268;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  gap: 15px;
+  background-color: #f9f5f1;
+  cursor: pointer;
+  margin-bottom: 20px;
+  user-select: none;
+}
+
+.uploadBox:hover {
+  background-color: #e8e2db;
+  border-color: #b21d4a;
+  color: #b21d4a;
+}
+
+.uploadText {
+  margin: 0;
+}
+
+.uploadIcon {
+  width: 40px;
+  height: 40px;
+  stroke: currentColor;
+}
+
+.upload {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
