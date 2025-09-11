@@ -16,11 +16,11 @@ function Login() {
     <form className="form">
       <div className="input-group">
         <img src={mail} alt="E-mail" />
-        <input type="email" placeholder="E-mail" />
+        <input type="email" placeholder="E-mail" required />
       </div>
       <div className="input-group">
         <img src={unlock} alt="Senha" />
-        <input type="password" placeholder="Senha" />
+        <input type="password" placeholder="Senha" required />
       </div>
       <Link to="/whoAreYou">
       <button className="entrar">Entrar</button>

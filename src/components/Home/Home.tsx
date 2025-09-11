@@ -5,7 +5,6 @@ import Differential from '../Differential/Differential';
 import About from '../About/About'
 import Section1 from '../Sections/Section1';
 import Questions from '../Questions/Questions';
-import Receiver from '../Receiver/Receiver';
 
 function Home(){
     return(
@@ -17,7 +16,6 @@ function Home(){
       <About />
       <Questions/>
       <Footer />
-      <Receiver/>
       </>
     )
 }

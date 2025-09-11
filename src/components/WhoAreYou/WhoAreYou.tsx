@@ -18,7 +18,9 @@ function WhoAreYou() {
         <Link to="/Giver">
         <button className="giver"> doador </button>
         </Link>
+        <Link to="/Receiver">
         <button className="receiver"> receptor </button>
+        </Link>
       </div>
     </section>
   );

@@ -37,7 +37,6 @@ body {
 .giverInformation {
   display: flex;
   flex-direction: row;
-  /* justify-content: flex-start; */
   justify-content: space-around;
   margin-left: 50px;
 }
@@ -66,6 +65,12 @@ body {
   background: transparent;
 }
 
+.buttonPronto{
+  display: flex;
+  justify-content: center;
+}
+
+
 .btn-pronto {
   display: flex;
   justify-content: center;
@@ -80,6 +85,7 @@ body {
   height: 60px;
   font-weight: 400;
 }
+
 
 .btn-pronto:hover {
   background-color: #a71f40;
@@ -126,4 +132,5 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 75px;
 }

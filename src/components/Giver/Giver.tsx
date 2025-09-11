@@ -61,9 +61,11 @@ function Giver() {
           </label>
         </div>
       </div>
+      <div className="buttonPronto">
       <button type="submit" className="btn-pronto">
           PRONTO
         </button>
+        </div>
     </section>
   );
 }
