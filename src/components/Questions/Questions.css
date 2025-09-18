@@ -1,12 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
 .frequentQuestions {
-  height: 100vh;
+  min-height: 100vh;
   padding: 0;
   font-family: "Poppins", sans-serif;
   display: flex;
   justify-content: space-between;
-  /* gap: 10px;  */
   background-color: #fffbf5;
   color: #323232;
   font-weight: 350;
@@ -14,15 +13,16 @@
 
 .partOne,
 .partTwo {
-  flex: 1; /* cada um ocupa metade */
+  flex: 1;
   text-align: justify;
-  margin: 60px 80px; /* (10px para cima/baixo, 30px para esquerda/direita). */
+  margin: 60px 80px;
 }
 
 .titleQuestions,
 .makeQuestion {
   font-size: 40px;
   text-align: justify;
+  font-weight: 300;
 }
 
 .principalQuestions {
@@ -53,16 +53,16 @@
   text-transform: uppercase;
   background-color: #faefe0;
   margin-right: 10px;
-  text-align: center; /* Centraliza o texto e placeholder */
+  text-align: center;
 }
 
 .input-box::placeholder {
-  text-align: center; /* Centraliza só o placeholder */
+  text-align: center;
 }
 
 .submit {
   padding: 11px 20px;
-  background-color: #c6284f; /* Cor do botão */
+  background-color: #c6284f;
   color: white;
   font-size: 1rem;
   cursor: pointer;
@@ -72,4 +72,78 @@
 
 .submit:hover {
   background-color: #a71f40;
+}
+
+@media (max-width: 1024px) {
+  .frequentQuestions {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .partOne,
+  .partTwo {
+    margin: 10px;
+    max-width: 800px;
+  }
+
+  .titleQuestions,
+  .makeQuestion {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .principalQuestions {
+    font-size: 1.2rem;
+  }
+
+  .answers {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .titleQuestions,
+  .makeQuestion {
+    font-size: 1.6rem;
+  }
+
+  .principalQuestions {
+    font-size: 1.1rem;
+  }
+
+  .answers {
+    font-size: 0.95rem;
+  }
+
+  .input-box {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .titleQuestions,
+  .makeQuestion {
+    font-size: 1.4rem;
+  }
+
+  .principalQuestions {
+    font-size: 1rem;
+  }
+
+  .answers {
+    font-size: 0.9rem;
+  }
+
+  .submit, .input-box {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+
+  .submit{
+    margin-top: 10px;
+  }
+  .frequentQuestions{
+    margin: 20px;
+  }
 }

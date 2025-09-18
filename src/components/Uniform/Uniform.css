@@ -1,10 +1,11 @@
-.materialSection {
-  height: 100vh;
-  width: 100%;
-  background-color: #b5053a;
+
+.uniformSection{
+    height: 100vh;
+    width: 100%;
+    background-color: #b5053a;
 }
 
-.materialCategoria {
+.uniformCategoria {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,7 +13,7 @@
   margin-bottom: 2rem;
 }
 
-.materialCategoria div {
+.uniformCategoria div {
   width: 450px;
   height: 610px;
   background-size: cover;
@@ -26,37 +27,35 @@
   background-color: white;
 }
 
-.materialTitle {
-  font-size: 50px;
-  color: #e5d9cd;
-  font-weight: 300;
-  display: flex;
-  align-self: flex-start;
-  margin-left: 50px;
+.uniformTitle{
+    font-size: 50px;
+    color: #e5d9cd;
+    font-weight: 300;
+    display: flex;
+    align-self: flex-start;
+    margin-left: 50px;
 }
 
-.mochila,
-.livro,
-.cadernos {
+.camiseta, .calcas, .moletons{
   color: #000000;
   margin: 5px;
 }
 
-.bag,
-.notebook,
-.book {
-  display: flex;
-  flex-direction: column;
-}
-.caderno {
-  width: 250px;
-  height: 250px;
+.shirt, .pants, .sweatshirt{
+    display: flex;
+    flex-direction: column;
 }
 
-.buttonPronto {
+.caderno{
+    width: 250px;
+    height: 250px;
+}
+
+.buttonPronto{
   display: flex;
   justify-content: center;
 }
+
 
 .btn-add {
   display: flex;
@@ -75,18 +74,27 @@
   margin-bottom: 10px;
 }
 
+
 .btn-add:hover {
   background-color: #a71f40;
   color: #fffbf5;
 }
-.materialSection {
-  padding: 20px;
-}
-
-.materialHeader {
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: white;
+}
+
+.nav-left a {
+  color: white;
+  margin-right: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-left a:hover {
+  text-decoration: underline;
 }
 
 .cart-btn {

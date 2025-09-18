@@ -1,10 +1,7 @@
-/* src/components/Header/Header.css */
-
 .header-container {
   width: 100vw;
   height: 100vh;
   background-size: cover;
-  /* background-position: center; */
   background-repeat: no-repeat;
 
   display: flex;

@@ -62,10 +62,10 @@ function Giver() {
         </div>
       </div>
       <div className="buttonPronto">
-      <button type="submit" className="btn-pronto">
+        <button type="submit" className="btn-pronto">
           PRONTO
         </button>
-        </div>
+      </div>
     </section>
   );
 }

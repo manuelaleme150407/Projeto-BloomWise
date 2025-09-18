@@ -1,10 +1,10 @@
-.materialSection {
+.eletronicsSection {
   height: 100vh;
   width: 100%;
   background-color: #b5053a;
 }
 
-.materialCategoria {
+.eletronicsCategoria {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,7 +12,7 @@
   margin-bottom: 2rem;
 }
 
-.materialCategoria div {
+.eletronicsCategoria div {
   width: 450px;
   height: 610px;
   background-size: cover;
@@ -21,12 +21,13 @@
   align-items: center;
   justify-content: center;
   position: relative;
+  cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border: 2.5px solid #7e0026;
   background-color: white;
 }
 
-.materialTitle {
+.eletronicsTitle {
   font-size: 50px;
   color: #e5d9cd;
   font-weight: 300;
@@ -35,22 +36,18 @@
   margin-left: 50px;
 }
 
-.mochila,
-.livro,
-.cadernos {
+.fones,
+.calculadoras,
+.mouses {
   color: #000000;
   margin: 5px;
 }
 
-.bag,
-.notebook,
-.book {
+.earphone,
+.calculator,
+.mouse {
   display: flex;
   flex-direction: column;
-}
-.caderno {
-  width: 250px;
-  height: 250px;
 }
 
 .buttonPronto {
@@ -79,14 +76,23 @@
   background-color: #a71f40;
   color: #fffbf5;
 }
-.materialSection {
-  padding: 20px;
-}
-
-.materialHeader {
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-right: 20px;
+  color: white;
+}
+
+.nav-left a {
+  color: white;
+  margin-right: 25px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-left a:hover {
+  text-decoration: underline;
 }
 
 .cart-btn {

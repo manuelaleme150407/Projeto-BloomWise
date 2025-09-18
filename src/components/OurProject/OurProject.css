@@ -2,7 +2,7 @@
 
 html,
 body {
-  height: 100%;
+  min-height: 100%;
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
@@ -80,4 +80,67 @@ body {
 .donate:hover,
 .receive:hover {
   background-color: #a3234a;
+}
+
+
+@media (max-width: 1024px) {
+  .titleProject {
+    font-size: 2rem;
+    margin-left: 0;
+  }
+
+  .informationProject {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .textProject {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .titleProject {
+    font-size: 1.8rem;
+  }
+
+  .textContent {
+    max-width: 100%;
+  }
+
+  .buttonsProject {
+    flex-direction: row;
+    gap: 15px;
+  }
+
+  .donate,
+  .receive {
+    width: 80%;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .ourProject{
+    margin-bottom: 30px;
+  }
+
+  .titleProject h1 {
+    font-size: 30px;
+    margin-left: 10px;
+  }
+
+  .textProject {
+    font-size: 0.95rem;
+  }
+
+  .image{
+    width: 300px;
+  }
+  .donate,
+  .receive {
+    width: 100%;
+    padding: 10px;
+    font-size: 0.9rem;
+  }
 }

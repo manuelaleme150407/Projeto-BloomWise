@@ -6,7 +6,6 @@ function About() {
     <section className="aboutUs">
       <div className="titleAbout">Sobre nós</div>
       <div className="imageAbout" style={{ backgroundImage: `url(${about})`}}>
-        {/* <div className="titleAbout">Sobre nós</div> */}
         <div className="content">
         <div className="aboutText">
         Somos quatro meninas movidas pelo desejo de transformar a sociedade

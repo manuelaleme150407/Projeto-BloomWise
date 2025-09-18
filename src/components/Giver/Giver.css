@@ -21,8 +21,8 @@ body {
 
 .welcomeMessage {
   position: absolute;
-  bottom: 16px; /* distância da base da imagem */
-  left: 16px; /* distância da esquerda da imagem */
+  bottom: 16px;
+  left: 16px;
   color: #fffbf5;
   font-size: 60px;
 }
@@ -65,11 +65,10 @@ body {
   background: transparent;
 }
 
-.buttonPronto{
+.buttonPronto {
   display: flex;
   justify-content: center;
 }
-
 
 .btn-pronto {
   display: flex;
@@ -85,7 +84,6 @@ body {
   height: 60px;
   font-weight: 400;
 }
-
 
 .btn-pronto:hover {
   background-color: #a71f40;
