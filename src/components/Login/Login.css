@@ -96,7 +96,10 @@
 
 @media (max-width: 480px){
   .login-container{
+    background-image: none;
     background-color: #b5053a;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
