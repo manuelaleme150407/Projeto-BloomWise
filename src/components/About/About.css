@@ -61,23 +61,23 @@
   }
 
   .titleAbout {
-    font-size: 26px;   /* menor no celular */
-    top: 8%;           /* posição um pouco mais para cima */
+    font-size: 26px;   
+    top: 8%;           
     text-align: center;
     width: 100%;
   }
 
   .aboutText {
-    font-size: 0.95rem;   /* reduz tamanho da fonte */
-    line-height: 1.4;     /* menos espaçamento entre linhas */
-    text-align: center;   /* centraliza */
-    padding: 0 20px;      /* margem lateral para não grudar */
+    font-size: 0.95rem;   
+    line-height: 1.4;     
+    text-align: center;  
+    padding: 0 20px;      
     margin-bottom: 30px;
     color: black;
   }
 
   .content {
-    justify-content: flex-end; /* texto sempre no final da tela */
+    justify-content: flex-end; 
     padding-bottom: 40px;
   }
 }
