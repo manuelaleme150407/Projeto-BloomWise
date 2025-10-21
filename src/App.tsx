@@ -28,7 +28,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
-           <Route path="/login" element={<Login loginFn={handleLogin} />} />
+           <Route path="/loginn" element={<Login loginFn={handleLogin} />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/whoAreYou" element={<WhoAreYou />} />
           <Route path="/Giver" element={<Giver />} />

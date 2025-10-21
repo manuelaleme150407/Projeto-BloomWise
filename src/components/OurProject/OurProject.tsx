@@ -29,10 +29,10 @@ function OurProject() {
             <br />
           </p>
           <div className="buttonsProject">
-            <Link to="/login">
+            <Link to="/loginn">
               <button className="donate">QUERO DOAR</button>
             </Link>
-            <Link to="/login">
+            <Link to="/loginn">
               <button className="receive">QUERO RECEBER</button>
             </Link>
           </div>
