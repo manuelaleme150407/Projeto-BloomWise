@@ -33,37 +33,78 @@ const Login: React.FC<LoginProps> = ({loginFn}) => {
     
       const toggleSenha = () => setShowSenha((prev) => !prev);
 
-      const handleSubmit = async(e: React.FormEvent) => {
-        e.preventDefault();
-        setLoading(true);
-        try{
-            const res = await api.post("/usuario/login", {
-                email: formData.email,
-                senha: formData.senha
-            });
+      const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+  setLoading(true);
+
+  try {
+    const res = await fetch("/usuario/login", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        email: formData.email,
+        senha: formData.senha,
+      }),
+    });
+
+    if (!res.ok) {
+      if (res.status === 401) {
+        alert("Email ou senha inválidos!");
+      } else {
+        alert("Erro na autenticação. Tente novamente.");
+      }
+      setLoading(false);
+      return;
+    }
+
+    const user: User = await res.json();
+
+    if (!user) {
+      alert("Email ou senha inválidos!");
+      setLoading(false);
+      return;
+    }
+
+    loginFn(user);
+    localStorage.setItem("usuarioLogado", JSON.stringify(user));
+    navigate("/");
+
+  } catch (err) {
+    console.error("Erro de rede:", err);
+    alert("Erro ao conectar ao servidor. Verifique sua conexão e tente novamente.");
+  } finally {
+    setLoading(false);
+  }
+      // const handleSubmit = async(e: React.FormEvent) => {
+      //   e.preventDefault();
+      //   setLoading(true);
+      //   try{
+      //       const res = 
     
-            const user: User = res.data;
+      //       const user: User = res.data;
 
-            if(!user) {
-                alert("Email ou senha inválidos!");
-                setLoading(false);
-                return;
-            }
+      //       if(!user) {
+      //           alert("Email ou senha inválidos!");
+      //           setLoading(false);
+      //           return;
+      //       }
 
-            loginFn(user);
-            localStorage.setItem("usuarioLogado", JSON.stringify(user));
+      //       loginFn(user);
+      //       localStorage.setItem("usuarioLogado", JSON.stringify(user));
 
-            navigate("/");
-        }catch(err: any){
-            console.error(err);
-            if(err.response?.status === 401){
-                alert("Email ou senha inválidos!");
-            }else{
-                alert("Erro na autenticação. Tente novamente.")
-            }
-        } finally{
-            setLoading(false)
-        }
+      //       navigate("/");
+      //   }catch(err: any){
+      //       console.error(err);
+      //       if(err.response?.status === 401){
+      //           alert("Email ou senha inválidos!");
+      //       }else{
+      //           alert("Erro na autenticação. Tente novamente.")
+      //       }
+      //   } finally{
+      //       setLoading(false)
+      //   }
       }
   return (
 

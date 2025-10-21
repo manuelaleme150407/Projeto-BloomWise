@@ -2,7 +2,7 @@ import React, {createContext, useContext, useState} from "react";
 
 export interface TipoUsuario{
     id: number;
-    nomeTipoUsuario: "Usuario" | "Admin";
+    // nomeTipoUsuario: "Usuario" | "Admin";
 }
 
 export interface User{
@@ -10,7 +10,7 @@ export interface User{
     nome: string;
     email: string;
     senha: string;
-    tipoUsuario: TipoUsuario;
+    // tipoUsuario: TipoUsuario;
 }
 
 interface AuthContextType {

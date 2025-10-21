@@ -12,14 +12,23 @@ import Cart from './components/ShoppingCar/ShoppingCar'
 import Eletronics from './components/Eletronics/Eletronics'
 import Maps from './components/Maps/Maps'
 import { CartProvider } from './components/ShoppingCar/CartContext';
+import { useState } from 'react';
+import type { User } from './hooks/useAuth';
 
 function App() {
+  const [user, setUser] = useState<User | null>(null);
+
+  // função que o Login vai usar
+  const handleLogin = (loggedUser: User) => {
+    setUser(loggedUser);
+    console.log("Usuário logado:", loggedUser);
+  };
   return (
     <CartProvider>
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/login" element={<Login />} />
+           <Route path="/login" element={<Login loginFn={handleLogin} />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/whoAreYou" element={<WhoAreYou />} />
           <Route path="/Giver" element={<Giver />} />
