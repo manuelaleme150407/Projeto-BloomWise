@@ -15,7 +15,7 @@ const Giver: React.FC<GiverProps> = ({ user }) => {
   const [titulo, setTitulo] = useState("");
   const [categoria, setCategoria] = useState("");
   const [descricao, setDescricao] = useState("");
-  const [imagemUrl, setImagemUrl] = useState<string | null>(null);
+  const [imagemUrl, setImagemUrl] =  useState("");
 
   const navigate = useNavigate();
 
@@ -106,10 +106,10 @@ const Giver: React.FC<GiverProps> = ({ user }) => {
               id="uploadFile"
               accept="image/*"
               onChange={(e) => {
-                if (e.target.files && e.target.files[0]) {
-                  handleImageUpload(e.target.files[0]);
-                }
-              }}
+  if (e.target.files && e.target.files.length > 0) {
+    setImagemUrl(e.target.files[0].name); // apenas o nome do arquivo
+  }
+}}
               style={{ display: "none" }}
             />
           </label>
@@ -126,7 +126,7 @@ const Giver: React.FC<GiverProps> = ({ user }) => {
 
       <div className="buttonPronto">
         <button type="submit" className="btn-pronto">
-          PRONTO
+          CADASTRAR
         </button>
       </div>
     </form>
