@@ -35,6 +35,7 @@
 .receiverInformation {
   text-align: center;
   margin-top: 1.5rem;
+   overflow: hidden;
 }
 
 .receiverText {
@@ -54,6 +55,7 @@
   align-items: center;
   gap: 50px;
   margin-bottom: 2rem;
+  overflow: hidden;
 }
 
 .categoria div {
@@ -81,3 +83,4 @@
   text-align: center;
   font-weight: 400;
 }
+

@@ -25,7 +25,7 @@ function Receiver() {
         <Link to="/SchoolMaterial">
           <div
             className="material"
-            style={{ backgroundImage: `url(${pinceis})` }}
+            style={{overflow: "hidden", backgroundImage: `url(${pinceis})`}}
           >
             <p className="categoria-title">Material Escolar</p>
           </div>
