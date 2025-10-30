@@ -58,60 +58,7 @@ const Signup = () => {
     }
   };
 
-  //  return (
-  //   <div className="register-page">
-  //     <form onSubmit={handleSubmit} className="form-container-register">
-  //       <div className="top-parte-register">
-  //         <h1>Cadastro</h1>
-  //       </div>
 
-  //       <input
-  //         type="text"
-  //         name="nome"
-  //         placeholder="Nome"
-  //         value={formData.nome}
-  //         onChange={handleChange}
-  //       />
-
-  //       <input
-  //         type="email"
-  //         name="email"
-  //         placeholder="Email"
-  //         value={formData.email}
-  //         onChange={handleChange}
-  //       />
-
-  // <div className="senha-container">
-  //   <input
-  //     type={showSenha ? "text" : "password"}
-  //     name="senha"
-  //     placeholder="Senha"
-  //     value={formData.senha}
-  //     onChange={handleChange}
-  //   />
-
-  //         <button
-  //           type="button"
-  //           onClick={toggleSenha}
-  //           className="btn-view-password"
-  //         >
-  //           {showSenha ? "Ocultar" : "Mostrar"}
-  //         </button>
-  //       </div>
-
-  //       <button type="submit" disabled={loading}>
-  //         {loading ? "Cadastrando..." : "Cadastrar"}
-  //       </button>
-
-  //       <p className="login-link">
-  //         Já possui uma conta?{" "}
-  //         <button type="button" onClick={() => navigate("/loginn")} className="btn-login">
-  //           Login
-  //         </button>
-  //       </p>
-  //     </form>
-  //   </div>
-  // );
   return (
     <div>
       <div
@@ -154,13 +101,13 @@ const Signup = () => {
                 <button 
                   type="button"
                   onClick={toggleSenha}
-                  // className="ente"
+                  
                 >
                   {showSenha ? "Ocultar" : "Mostrar"}
                 </button>
               </div>     
 
-              <button className="enter" type="submit" disabled={loading}>12
+              <button className="enter" type="submit" disabled={loading}>
                 {loading ? "Cadastrando..." : "Cadastrar"}
               </button> 
               {/* <Link to="/whoAreYou">
@@ -168,7 +115,7 @@ const Signup = () => {
             </Link> */}
     
             </form>
-            <Link to="/login">
+            <Link to="/loginn">
                 <p className="signup">
                   Já tem uma conta? <a href="#">Entre aqui</a>
                 </p>

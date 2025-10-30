@@ -14,11 +14,12 @@ import Maps from './components/Maps/Maps'
 import { CartProvider } from './components/ShoppingCar/CartContext';
 import { useState } from 'react';
 import type { User } from './hooks/useAuth';
+import NotFound from './components/NotFound/NotFound';
+import Profile from './components/Profile/Profile';
 
 function App() {
   const [user, setUser] = useState<User | null>(null);
 
-  // função que o Login vai usar
   const handleLogin = (loggedUser: User) => {
     setUser(loggedUser);
     console.log("Usuário logado:", loggedUser);
@@ -37,7 +38,11 @@ function App() {
           <Route path="/Uniform" element={<Uniform />} />
           <Route path="/Eletronics" element={<Eletronics />} />
           <Route path="/Cart" element={<Cart onClose={() => console.log("Fechar carrinho")} /> } /> 
-          <Route path="/Maps" element={<Maps />} />   
+          <Route path="/Maps" element={<Maps />} />
+          <Route path="/Profile" element={<Profile />} />
+
+
+          <Route path="*" element={<NotFound />}   />
         </Routes>
       </Router>
     </CartProvider>

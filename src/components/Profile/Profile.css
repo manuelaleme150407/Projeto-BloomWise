@@ -1,0 +1,175 @@
+.profile-container {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: #b5053a; /* vermelho vinho */
+  min-height: 100vh;
+  color: #f8f8f8;
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+}
+
+/* --- Left Section --- */
+.profile-content {
+  width: 100%;
+  padding: 40px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.profile-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 80px; /* deixa espaço para o botão Voltar */
+  margin-left: 60px;
+}
+
+.profile-left h1 {
+  font-size: 3rem; /* levemente menor */
+  margin-bottom: 10px;
+  font-weight: 300;
+}
+
+.username {
+  font-weight: 700;
+}
+
+.selected-items {
+  font-size: 1.4rem;
+  margin-bottom: 25px;
+  font-weight: 300;
+}
+
+/* --- Items Grid --- */
+.items-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 35px;
+  width: 80%;
+  margin-top: 30px;
+}
+
+.item-box {
+  width: 150px;
+  height: 150px;
+  border: 2px solid #fff;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.item-box img {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  margin-bottom: 5px;
+}
+
+.item-name {
+  font-size: 0.85rem;
+  text-align: center;
+  color: #fff;
+}
+
+/* --- PROFILE ICON (top right) --- */
+.user-circle {
+  position: absolute;
+  top: 25px;
+  right: 35px;
+  width: 80px; /* menor */
+  height: 80px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-circle img {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+  filter: invert(100%);
+}
+
+/* --- BUTTONS --- */
+
+/* botão voltar (topo esquerdo) */
+.logout-btn:nth-of-type(1) {
+  position: absolute;
+  top: 25px;
+  left: 35px;
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 6px 16px; /* menor */
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+/* botão sair (centro inferior da tela) */
+.logout-btn:nth-of-type(2) {
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 8px 22px; /* menor */
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.logout-btn:hover {
+  background-color: #fff;
+  color: #990033;
+}
+
+/* --- Responsivo --- */
+@media (max-width: 768px) {
+  .user-circle {
+    width: 70px;
+    height: 70px;
+    top: 20px;
+    right: 20px;
+  }
+
+  .logout-btn:nth-of-type(1) {
+    top: 20px;
+    left: 20px;
+    padding: 5px 14px;
+    font-size: 0.85rem;
+  }
+
+  .logout-btn:nth-of-type(2) {
+    bottom: 20px;
+    padding: 7px 18px;
+    font-size: 0.9rem;
+  }
+
+  .profile-left {
+    margin-left: 30px;
+    margin-top: 70px;
+  }
+
+  .profile-left h1 {
+    font-size: 2.4rem;
+  }
+
+  .selected-items {
+    font-size: 1.1rem;
+  }
+
+  .items-grid {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  }
+}
+

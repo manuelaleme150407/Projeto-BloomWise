@@ -50,6 +50,7 @@ function Receiver() {
           </div>
         </Link>
       </div>
+      <Link to="/whoAreYou" className="arrow-button"></Link>
     </section>
   );
 }

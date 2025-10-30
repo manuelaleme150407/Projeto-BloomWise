@@ -1,4 +1,4 @@
-
+// ShoppingCar.tsx
 import React from "react";
 import { useCart } from "./CartContext";
 import "./ShoppingCar.css";
@@ -9,7 +9,7 @@ type Props = {
 };
 
 function ShoppingCart({ onClose }: Props) {
-  const { cart, clearCart } = useCart();
+  const { cart, finalizePurchase } = useCart();
 
   return (
     <>
@@ -37,9 +37,9 @@ function ShoppingCart({ onClose }: Props) {
             <p><strong>Quantidade de produtos:</strong> {cart.length}</p>
             <p><strong>Total:</strong> R$ 0,00</p>
             <Link to="/Maps">
-            <button className="cart-finalizar" onClick={clearCart}>
-              FINALIZAR COMPRA
-            </button>
+              <button className="cart-finalizar" onClick={finalizePurchase}>
+                FINALIZAR COMPRA
+              </button>
             </Link>
           </>
         )}

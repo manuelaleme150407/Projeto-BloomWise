@@ -63,81 +63,10 @@ const Login: React.FC<LoginProps> = ({ loginFn }) => {
     } finally {
       setLoading(false);
     }
-    // const handleSubmit = async(e: React.FormEvent) => {
-    //   e.preventDefault();
-    //   setLoading(true);
-    //   try{
-    //       const res =
-
-    //       const user: User = res.data;
-
-    //       if(!user) {
-    //           alert("Email ou senha inválidos!");
-    //           setLoading(false);
-    //           return;
-    //       }
-
-    //       loginFn(user);
-    //       localStorage.setItem("usuarioLogado", JSON.stringify(user));
-
-    //       navigate("/");
-    //   }catch(err: any){
-    //       console.error(err);
-    //       if(err.response?.status === 401){
-    //           alert("Email ou senha inválidos!");
-    //       }else{
-    //           alert("Erro na autenticação. Tente novamente.")
-    //       }
-    //   } finally{
-    //       setLoading(false)
-    //   }
+    
   };
   return (
-    //   <div className="register-page">
-    //     <form onSubmit={handleSubmit} className="form-container-login">
-    //       <div className="top-parte-login">
-    //         <h1>Login</h1>
-    //       </div>
-
-    //       <input
-    //         type="email"
-    //         name="email"
-    //         placeholder="Email"
-    //         value={formData.email}
-    //         onChange={handleChange}
-    //       />
-
-    //       <div className="senha-container">
-    //         <input
-    //           type={showSenha ? "text" : "password"}
-    //           name="senha"
-    //           placeholder="Senha"
-    //           value={formData.senha}
-    //           onChange={handleChange}
-    //         />
-
-    //         <button
-    //           type="button"
-    //           onClick={toggleSenha}
-    //           className="btn-view-password"
-    //         >
-    //           {showSenha ? "Ocultar" : "Mostrar"}
-    //         </button>
-    //       </div>
-
-    //       <button type="submit" disabled={loading}>
-    //         {loading ? "Entrando..." : "Entrar"}
-    //       </button>
-
-    //       <p className="register-link">
-    //        Não possui uma conta?{" "}
-    //         <button type="button" onClick={() => navigate("/signUp")} className="btn-register">
-    //           Cadastre-se
-    //         </button>
-    //       </p>
-    //     </form>
-    //   </div>
-    // );
+   
 
     <div>
       <div
@@ -176,7 +105,7 @@ const Login: React.FC<LoginProps> = ({ loginFn }) => {
                 {showSenha ? "Ocultar" : "Mostrar"}
               </button>
             </div>
-            <button type="submit" disabled={loading}>
+            <button type="submit" disabled={loading} className="entrar">
                 {loading ? "Entrando..." : "Entrar"}
               </button>
             {/* <Link to="/whoAreYou">
