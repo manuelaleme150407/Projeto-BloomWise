@@ -62,7 +62,7 @@
 
   .titleAbout {
     font-size: 26px;   
-    top: 8%;           
+    top: 4%;           
     text-align: center;
     width: 100%;
   }
@@ -78,7 +78,6 @@
 
   .content {
     justify-content: flex-end; 
-    padding-bottom: 40px;
   }
 }
 

@@ -8,6 +8,7 @@ import { useNavigate } from "react-router-dom";
 import type { User } from "../../hooks/useAuth";
 import { api } from "../../api";
 import { Link } from "react-router-dom";
+import { Eye, EyeOff } from "lucide-react"
 
 interface FormData {
   nome: string;
@@ -63,7 +64,7 @@ const Signup = () => {
     <div>
       <div
         className="signup-container"
-        style={{ backgroundImage: `url(${signup})` }}
+        // style={{ backgroundImage: `url(${signup})` }}
       >
         
           <div className="left-side">
@@ -72,6 +73,7 @@ const Signup = () => {
             <div className="sign-group">
               <img src={id} alt="Nome" />
               <input
+                required
                 type="text"
                 placeholder="Nome"
                 name="nome"
@@ -82,6 +84,7 @@ const Signup = () => {
             <div className="sign-group">
               <img src={mail} alt="E-mail" />
               <input
+                required
                 type="email"
                 placeholder="E-mail"
                 name="email"
@@ -92,6 +95,7 @@ const Signup = () => {
               <div className="sign-group">
                 <img src={unlock} alt="senha" />
                 <input
+                  required
                   type={showSenha ? "text" : "password"}
                   name="senha"
                   placeholder="Senha"
@@ -103,7 +107,7 @@ const Signup = () => {
                   onClick={toggleSenha}
                   
                 >
-                  {showSenha ? "Ocultar" : "Mostrar"}
+                  {showSenha ? <Eye className="eye" /> : <EyeOff className="eye" />}
                 </button>
               </div>     
 

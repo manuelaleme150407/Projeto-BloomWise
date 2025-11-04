@@ -56,9 +56,19 @@ body {
 
 .inputGiver {
   font-size: 20px;
-  margin-left: 40px;
+  margin-left: 10px;
   border: none;
   border-bottom: 2px solid #000;
+  outline: none;
+  padding: 8px 0;
+  width: 500px;
+  background: transparent;
+}
+
+.inputGiverCategory {
+  font-size: 20px;
+  margin-left: 10px;
+  border: none;
   outline: none;
   padding: 8px 0;
   width: 500px;
@@ -84,6 +94,7 @@ body {
   height: 60px;
   font-weight: 400;
   overflow: hidden;
+  margin-bottom: 50px;
 }
 
 .btn-pronto:hover {
@@ -164,4 +175,61 @@ body {
 .arrow-button:hover {
   transform: scale(1.1);
 }
+
+.categoryGroup {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.categoryTitle {
+  font-size: 18px;
+  color: #3f3f3f;
+  margin-bottom: 5px;
+  text-transform: lowercase;
+}
+
+.categoryRadio {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  color: #3f3f3f;
+  cursor: pointer;
+  text-transform: lowercase;
+  position: relative;
+}
+
+.categoryRadio input {
+  display: none;
+}
+
+.customRadio {
+  width: 18px;
+  height: 18px;
+  border: 2px solid #b5053a; /* mesmo vermelho do botão */
+  border-radius: 3px;
+  display: inline-block;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+}
+
+.categoryRadio input:checked + .customRadio {
+  background-color: #b5053a;
+  border-color: #b5053a;
+}
+
+.categoryRadio input:checked + .customRadio::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 8px;
+  height: 8px;
+  background: #fff;
+  border-radius: 1px;
+}
+
 

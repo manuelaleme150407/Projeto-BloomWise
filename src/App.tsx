@@ -16,6 +16,7 @@ import { useState } from 'react';
 import type { User } from './hooks/useAuth';
 import NotFound from './components/NotFound/NotFound';
 import Profile from './components/Profile/Profile';
+import ThankYouPage from './components/ThankYouPage/ThankYouPage';
 
 function App() {
   const [user, setUser] = useState<User | null>(null);
@@ -40,7 +41,7 @@ function App() {
           <Route path="/Cart" element={<Cart onClose={() => console.log("Fechar carrinho")} /> } /> 
           <Route path="/Maps" element={<Maps />} />
           <Route path="/Profile" element={<Profile />} />
-
+          <Route path="/ThankYouPage" element={<ThankYouPage />} />
 
           <Route path="*" element={<NotFound />}   />
         </Routes>

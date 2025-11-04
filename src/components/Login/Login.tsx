@@ -1,4 +1,4 @@
-import logIn from "../../assets/images/logIn.png";
+
 import unlock from "../../assets/images/unlock.png";
 import mail from "../../assets/images/mail.png";
 import "./Login.css";
@@ -7,7 +7,7 @@ import { useNavigate } from "react-router-dom";
 import type { User } from "../../hooks/useAuth";
 import { Link } from "react-router-dom";
 import { api } from "../../api";
-import { useAuth } from "../../hooks/useAuth";
+import { Eye, EyeOff } from 'lucide-react';
 
 interface LoginProps {
   loginFn: (user: User) => void;
@@ -71,8 +71,8 @@ const Login: React.FC<LoginProps> = ({ loginFn }) => {
     <div>
       <div
         className="login-container"
-        style={{ backgroundImage: `url(${logIn})` }}
       >
+        
         <div className="right-side">
           <h2>Bem Vindo de Volta!</h2>
           <form onSubmit={handleSubmit} className="form-container-login">
@@ -102,7 +102,7 @@ const Login: React.FC<LoginProps> = ({ loginFn }) => {
                 onClick={toggleSenha}
                 className="btn-view-password"
               >
-                {showSenha ? "Ocultar" : "Mostrar"}
+                {showSenha ? <Eye /> : <EyeOff />}
               </button>
             </div>
             <button type="submit" disabled={loading} className="entrar">
