@@ -8,18 +8,22 @@ function WhoAreYou() {
       <div
         className="header-container"
         style={{
-          backgroundImage: `url(${imageHover})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
         }}
       >
-        <p className="principalText">Quem <span className="differentWord">você</span> é?</p>
+        <p className="principalText">
+          Quem <span className="differentWord">você</span> é?
+        </p>
         <Link to="/Giver">
-        <button className="giver"> doador </button>
+          <button className="giver"> doador </button>
         </Link>
         <Link to="/Receiver">
-        <button className="receiver"> receptor </button>
+          <button className="receiver"> receptor </button>
+        </Link>
+        <Link to="/Profile" className="btn-perfil">
+          Acesse seu perfil
         </Link>
       </div>
     </section>

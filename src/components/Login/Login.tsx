@@ -1,4 +1,3 @@
-
 import unlock from "../../assets/images/unlock.png";
 import mail from "../../assets/images/mail.png";
 import "./Login.css";
@@ -7,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 import type { User } from "../../hooks/useAuth";
 import { Link } from "react-router-dom";
 import { api } from "../../api";
-import { Eye, EyeOff } from 'lucide-react';
+import { Eye, EyeOff } from "lucide-react";
 
 interface LoginProps {
   loginFn: (user: User) => void;
@@ -63,16 +62,10 @@ const Login: React.FC<LoginProps> = ({ loginFn }) => {
     } finally {
       setLoading(false);
     }
-    
   };
   return (
-   
-
     <div>
-      <div
-        className="login-container"
-      >
-        
+      <div className="login-container">
         <div className="right-side">
           <h2>Bem Vindo de Volta!</h2>
           <form onSubmit={handleSubmit} className="form-container-login">
@@ -106,11 +99,8 @@ const Login: React.FC<LoginProps> = ({ loginFn }) => {
               </button>
             </div>
             <button type="submit" disabled={loading} className="entrar">
-                {loading ? "Entrando..." : "Entrar"}
-              </button>
-            {/* <Link to="/whoAreYou">
-            
-            </Link> */}
+              {loading ? "Entrando..." : "Entrar"}
+            </button>
 
             <Link to="/signup">
               <p className="signup">

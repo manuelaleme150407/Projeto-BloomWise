@@ -4,9 +4,13 @@ import "./NotFound.css";
 
 export default function NotFound() {
   return (
-    <div className="notfound-container" style={{ backgroundImage: `url(${erro404})` }}>
-      <button className="btn-404"><Link to="/">voltar</Link></button>
-      
+    <div
+      className="notfound-container"
+      style={{ backgroundImage: `url(${erro404})` }}
+    >
+      <button className="btn-404">
+        <Link to="/">voltar</Link>
+      </button>
     </div>
   );
 }

@@ -27,8 +27,8 @@ body {
   font-weight: 200;
 }
 
-.coloredLetter{
-  color:#c52c5a;
+.coloredLetter {
+  color: #c52c5a;
 }
 
 .informationProject {
@@ -82,7 +82,6 @@ body {
   background-color: #a3234a;
 }
 
-
 @media (max-width: 1024px) {
   .titleProject {
     font-size: 2rem;
@@ -121,7 +120,7 @@ body {
 }
 
 @media (max-width: 480px) {
-  .ourProject{
+  .ourProject {
     margin-bottom: 80px;
   }
 
@@ -134,7 +133,7 @@ body {
     font-size: 0.95rem;
   }
 
-  .image{
+  .image {
     width: 300px;
   }
   .donate,

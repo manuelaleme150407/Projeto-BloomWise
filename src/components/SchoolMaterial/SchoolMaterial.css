@@ -1,5 +1,232 @@
 .materialSection {
   width: 100%;
+  min-height: 100vh;
+  background-color: #b5053a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.materialHeader {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+}
+
+.materialTitle {
+  font-size: 50px;
+  color: #e5d9cd;
+  font-weight: 300;
+  display: flex;
+  align-self: flex-start;
+  margin-left: 80px;
+  letter-spacing: 2px; 
+  margin-top: 10px;
+}
+
+.materialCategoria {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap; /* 👉 Faz os cards quebrarem de linha */
+  gap: 40px;
+  margin-bottom: 2rem;
+  width: 100%;
+  max-width: 1300px; /* 👉 Limita a largura total pra caber 3 cards */
+}
+
+.card-doacao {
+  width: 300px;
+  height: 500px;
+  background-color: white;
+  border: 2.5px solid #7e0026;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-doacao:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.3);
+}
+
+.card-imagem {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+
+}
+
+.card-titulo {
+  font-size: 22px;
+  font-weight: 600;
+  color: #b5053a;
+  margin: 10px 0 5px 0;
+  text-align: center;
+}
+
+.card-descricao {
+  font-size: 16px;
+  color: #333;
+  text-align: center;
+  padding: 0 10px 15px;
+}
+
+.mensagem-vazia {
+  font-size: 22px;
+  color: #fff9f4;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 40px;
+}
+
+
+.buttonPronto {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-add {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  padding: 11px 20px;
+  color: #b5053a;
+  cursor: pointer;
+  text-transform: uppercase;
+  border: 2px solid #b5053a;
+  width: 200px;
+  height: 60px;
+  font-weight: 400;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.btn-add:hover {
+  background-color: #a71f40;
+  color: #fffbf5;
+}
+
+.cart-icon {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.arrow-button {
+  position: absolute; /* ← trocado de fixed para absolute */
+  top: 25px;
+  left: 25px;
+  width: 45px;
+  height: 45px;
+  background: transparent;
+  border: 2px solid white;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.arrow-button::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  border-left: 2px solid white;
+  border-bottom: 2px solid white;
+  transform: rotate(45deg);
+}
+
+.arrow-button:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  transform: scale(1.1);
+}
+
+
+@media (max-width: 480px) {
+  .materialSection {
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .materialHeader {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .materialTitle {
+    font-size: 26px;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    margin-top: 60px; /* deixa espaço pro botão de voltar */
+  }
+
+  .arrow-button {
+    width: 38px;
+    height: 38px;
+    top: 15px;
+    left: 15px;
+  }
+
+  .cart-icon {
+    width: 35px;
+    height: 35px;
+    top: 15px;
+    right: 15px;
+  }
+
+  .materialCategoria {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding: 0 10px;
+  }
+
+  .card-doacao {
+    width: 95%;
+    max-width: 350px;
+  }
+
+  .card-imagem {
+    height: 180px;
+  }
+
+  .card-titulo {
+    font-size: 20px;
+  }
+
+  .card-descricao {
+    font-size: 14px;
+    padding: 0 8px 12px;
+  }
+
+  .mensagem-vazia {
+    font-size: 18px;
+  }
+}
+
+
+
+
+/* .materialSection {
+  width: 100%;
   background-color: #b5053a;
   padding: 0;
 }
@@ -132,3 +359,11 @@
   transform: scale(1.1);
 }
 
+@media (max-width: 480px) {
+  .materialSection {
+    
+  }
+  .eletronicsCategoria {
+     
+  }
+} */

@@ -1,14 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
-/* .login-container {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  height: 100vh;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  font-family: "Poppins", sans-serif;
-} */
+
 .login-container {
   display: flex;
   justify-content: flex-end;
@@ -104,9 +95,8 @@
   text-decoration: underline;
 }
 
-
-@media (max-width: 480px){
-  .login-container{
+@media (max-width: 480px) {
+  .login-container {
     background-image: none;
     background-color: #b5053a;
     display: flex;

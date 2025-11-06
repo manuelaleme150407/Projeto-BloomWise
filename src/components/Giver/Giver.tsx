@@ -49,17 +49,7 @@ const Giver: React.FC<GiverProps> = ({ user }) => {
       });
 
       alert("Doação cadastrada com sucesso!");
-
-      // 🔹 Redireciona de acordo com a categoria
-      if (categoria === "material escolar") {
-        navigate("/doacoes/SchoolMaterial");
-      } else if (categoria === "aparelhos eletrônicos") {
-        navigate("/Eletronics");
-      } else if (categoria === "uniformes") {
-        navigate("/doacoes/Uniform");
-      } else {
-        navigate("/"); // fallback
-      }
+      navigate("/ThankYouPage");
     } catch (error) {
       console.error("Erro ao cadastrar doação:", error);
       alert("Erro ao cadastrar a doação. Tente novamente.");
@@ -76,7 +66,8 @@ const Giver: React.FC<GiverProps> = ({ user }) => {
       <div className="giverInformation">
         <div className="giverTotal">
           <p className="giverText">
-            Insira as <span className="differentLetter">informações</span> seguintes:
+            Insira as <span className="differentLetter">informações</span>{" "}
+            seguintes:
           </p>
 
           <input
@@ -188,7 +179,6 @@ const Giver: React.FC<GiverProps> = ({ user }) => {
         </div>
       </div>
 
-      {/* 🔹 O botão agora envia o formulário corretamente */}
       <div className="buttonPronto">
         <button type="submit" className="btn-pronto">
           Cadastrar

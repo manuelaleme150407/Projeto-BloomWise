@@ -1,8 +1,7 @@
 import "./Maps.css";
 import { Link } from "react-router-dom";
- 
+
 function Maps() {
- 
   return (
     <section className="maps-section">
       <div className="maps-content">
@@ -45,8 +44,8 @@ function Maps() {
         ></iframe>
       </div>
       <Link to="/Profile" className="btn-to-profile">
-          Acesse seu perfil
-        </Link>
+        Acesse seu perfil
+      </Link>
     </section>
   );
 }

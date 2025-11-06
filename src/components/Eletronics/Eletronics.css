@@ -5,49 +5,49 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 40px 0;
   box-sizing: border-box;
 }
 
-/* Cabeçalho */
-.materialHeader {
+.eletronicsHeader {
   width: 100%;
   text-align: center;
-  margin-bottom: 30px;
+  margin: 0;
 }
 
 .eletronicsTitle {
   font-size: 50px;
   color: #e5d9cd;
   font-weight: 300;
-  text-transform: uppercase;
+  display: flex;
+  align-self: flex-start;
+  margin-left: 80px;
   letter-spacing: 2px;
+  margin-top: 10px;
 }
 
-/* Container dos cards */
 .eletronicsCategoria {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  align-items: stretch;
+  align-items: flex-start;
+  flex-wrap: wrap;
   gap: 40px;
-  padding: 0 40px;
+  margin-bottom: 2rem;
   width: 100%;
-  max-width: 1300px;
+  max-width: 1500px;
 }
 
-/* Card de doação */
 .card-doacao {
-  width: 300px;
-  background-color: #ffffff;
-  border: 2px solid #7e0026;
-  border-radius: 15px;
-  overflow: hidden;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 600px;
+  height: 500px;
+  background-color: white;
+  border: 2.5px solid #7e0026;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card-doacao:hover {
@@ -55,14 +55,12 @@
   box-shadow: 0 10px 18px rgba(0, 0, 0, 0.3);
 }
 
-/* Imagem do card */
 .card-imagem {
   width: 100%;
   height: 200px;
   object-fit: cover;
 }
 
-/* Título e descrição */
 .card-titulo {
   font-size: 22px;
   font-weight: 600;
@@ -78,7 +76,6 @@
   padding: 0 10px 15px;
 }
 
-/* Mensagem quando não há doações */
 .mensagem-vazia {
   font-size: 22px;
   color: #fff9f4;
@@ -87,11 +84,44 @@
   margin-top: 40px;
 }
 
-/* Botão de voltar */
 .buttonPronto {
   display: flex;
   justify-content: center;
   margin-top: 50px;
+}
+
+.btn-add {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  padding: 11px 20px;
+  color: #b5053a;
+  cursor: pointer;
+  text-transform: uppercase;
+  border: 2px solid #b5053a;
+  width: 200px;
+  height: 60px;
+  font-weight: 400;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.btn-add:hover {
+  background-color: #a71f40;
+  color: #fffbf5;
+}
+
+.cart-icon {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
 .arrow-button {
@@ -124,29 +154,26 @@
   transform: scale(1.1);
 }
 
-/* Responsividade */
-@media (max-width: 900px) {
-  .eletronicsTitle {
-    font-size: 36px;
-  }
-
-  .eletronicsCategoria {
-    gap: 25px;
-    padding: 0 20px;
-  }
-
-  .card-doacao {
-    width: 250px;
-  }
-}
-
-@media (max-width: 600px) {
+@media (max-width: 480px) {
   .eletronicsSection {
-    padding: 20px 0;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .eletronicsHeader {
+    text-align: center;
+    margin-bottom: 15px;
   }
 
   .eletronicsTitle {
-    font-size: 30px;
+    font-size: 26px;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    margin-top: 60px;
   }
 
   .arrow-button {
@@ -156,7 +183,39 @@
     left: 15px;
   }
 
+  .cart-icon {
+    width: 35px;
+    height: 35px;
+    top: 15px;
+    right: 15px;
+  }
+
+  .eletronicsCategoria {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding: 0 10px;
+  }
+
   .card-doacao {
-    width: 90%;
+    width: 95%;
+    max-width: 350px;
+  }
+
+  .card-imagem {
+    height: 180px;
+  }
+
+  .card-titulo {
+    font-size: 20px;
+  }
+
+  .card-descricao {
+    font-size: 14px;
+    padding: 0 8px 12px;
+  }
+
+  .mensagem-vazia {
+    font-size: 18px;
   }
 }

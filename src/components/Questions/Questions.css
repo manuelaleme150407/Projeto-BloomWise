@@ -136,15 +136,16 @@
     font-size: 0.9rem;
   }
 
-  .submit, .input-box {
+  .submit,
+  .input-box {
     width: 100%;
     font-size: 0.9rem;
   }
 
-  .submit{
+  .submit {
     margin-top: 10px;
   }
-  .frequentQuestions{
+  .frequentQuestions {
     margin: 20px;
   }
 }

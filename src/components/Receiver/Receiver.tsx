@@ -25,12 +25,13 @@ function Receiver() {
         <Link to="/SchoolMaterial">
           <div
             className="material"
-            style={{overflow: "hidden", backgroundImage: `url(${pinceis})`}}
+            style={{ overflow: "hidden", backgroundImage: `url(${pinceis})` }}
           >
             <p className="categoria-title">Material Escolar</p>
           </div>
         </Link>
-        <Link to={"/Uniform"}>
+
+        <Link to="/Uniform">
           <div
             className="criancas"
             style={{ backgroundImage: `url(${criancas})` }}
@@ -38,6 +39,7 @@ function Receiver() {
             <p className="categoria-title">Uniformes</p>
           </div>
         </Link>
+
         <Link to="/Eletronics">
           <div
             className="computador"

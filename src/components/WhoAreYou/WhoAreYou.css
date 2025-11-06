@@ -6,6 +6,7 @@
   background-size: cover; /* cobre todo o elemento */
   background-position: center; /* centraliza a imagem */
   background-repeat: no-repeat;
+  background-image: url("../../assets/images/fundoHover.png");
   margin: 0;
   display: flex;
   justify-content: center;
@@ -75,3 +76,70 @@
   opacity: 0.7;
   cursor: not-allowed;
 }
+.btn-perfil{
+  color: #faefe0;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+}
+
+@media (max-width: 480px) {
+  .whoAreYouSection {
+    background: #b5053a;
+    background-image: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    padding-top: 80px;
+  }
+
+  .principalText {
+    position: static;
+    font-size: 28px;
+    color: #faefe0 ;
+    margin-bottom: 60px;
+  }
+
+  .receiver,
+  .giver {
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .receiver {
+    background-color: #7e0026;
+    color: #faefe0 ;
+  }
+
+  .giver {
+    background-color: #e5d9cd;
+    color: #7a7169;
+    bottom: 100px;
+  }
+
+  .btn-perfil {
+    position: fixed;
+    bottom: 10px;
+    right: 30px ;
+    color: #faefe0 ;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+  }
+
+  .header-container{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
+
+
+

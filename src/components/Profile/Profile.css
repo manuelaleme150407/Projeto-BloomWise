@@ -3,14 +3,13 @@
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  background-color: #b5053a; /* vermelho vinho */
+  background-color: #b5053a;
   min-height: 100vh;
   color: #f8f8f8;
   font-family: "Poppins", sans-serif;
   overflow: hidden;
 }
 
-/* --- Left Section --- */
 .profile-content {
   width: 100%;
   padding: 40px 60px;
@@ -23,12 +22,12 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-top: 80px; /* deixa espaço para o botão Voltar */
+  margin-top: 80px;
   margin-left: 60px;
 }
 
 .profile-left h1 {
-  font-size: 3rem; /* levemente menor */
+  font-size: 3rem;
   margin-bottom: 10px;
   font-weight: 300;
 }
@@ -43,7 +42,6 @@
   font-weight: 300;
 }
 
-/* --- Items Grid --- */
 .items-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
@@ -76,12 +74,11 @@
   color: #fff;
 }
 
-/* --- PROFILE ICON (top right) --- */
 .user-circle {
   position: absolute;
   top: 25px;
   right: 35px;
-  width: 80px; /* menor */
+  width: 80px;
   height: 80px;
   border: 2px solid #fff;
   border-radius: 50%;
@@ -97,9 +94,6 @@
   filter: invert(100%);
 }
 
-/* --- BUTTONS --- */
-
-/* botão voltar (topo esquerdo) */
 .logout-btn:nth-of-type(1) {
   position: absolute;
   top: 25px;
@@ -107,13 +101,12 @@
   background-color: transparent;
   color: #fff;
   border: 2px solid #fff;
-  padding: 6px 16px; /* menor */
+  padding: 6px 16px;
   font-size: 0.9rem;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
 
-/* botão sair (centro inferior da tela) */
 .logout-btn:nth-of-type(2) {
   position: absolute;
   bottom: 25px;
@@ -122,7 +115,7 @@
   background-color: transparent;
   color: #fff;
   border: 2px solid #fff;
-  padding: 8px 22px; /* menor */
+  padding: 8px 22px;
   font-size: 1rem;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
@@ -133,8 +126,7 @@
   color: #990033;
 }
 
-/* --- Responsivo --- */
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .user-circle {
     width: 70px;
     height: 70px;
@@ -172,4 +164,3 @@
     grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
   }
 }
-

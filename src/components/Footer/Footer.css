@@ -68,24 +68,6 @@
   margin-top: 10px;
 }
 
-@media (max-width: 900px) {
-  .footer-top {
-    justify-content: center;
-    text-align: center;
-  }
-
-  .footer-infos,
-  .footer-hours {
-    margin: 10px 0;
-    max-width: 100%;
-  }
-
-  .footer-hours {
-    margin-right: 0;
-  }
-}
-
-/* Celulares */
 @media (max-width: 480px) {
   .footer-logo img {
     width: 180px;
